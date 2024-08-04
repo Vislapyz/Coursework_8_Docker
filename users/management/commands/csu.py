@@ -5,6 +5,7 @@ from users.models import User
 
 class Command(BaseCommand):
     """Cоздания superuser"""
+
     def handle(self, *args, **kwargs):
         user = User.objects.create(email="admin@sky.pro")
         user.is_staff = True

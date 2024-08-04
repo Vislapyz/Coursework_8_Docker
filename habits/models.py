@@ -5,7 +5,7 @@ from users.models import User
 NULLABLE = {"blank": True, "null": True}
 
 
-class Habits(models.Model):
+class Habit(models.Model):
     """Привычки и его свойства"""
 
     owner = models.ForeignKey(
