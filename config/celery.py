@@ -13,5 +13,4 @@ app = Celery("config")
 #   should have a `CELERY_` prefix.
 app.config_from_object("django.conf:settings", namespace="CELERY")
 
-# Эта строчка задает автообнаружение задач для исполнения в разных Приложениях нашего проекта
 app.autodiscover_tasks()
